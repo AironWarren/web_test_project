@@ -19,7 +19,7 @@ class SomeResourceClient:
         return datetime.fromtimestamp(last_action_time - time_diff)
 
 
-some_resource_client = SomeResourceClient("https://www.avito.ru")
-print(some_resource_client.user_get_status("7e59e245162b490c6ea0edf90dbedc74996db8b9122eda86e45011228299bff6"))
-print(some_resource_client.get_user_last_action_time("7e59e245162b490c6ea0edf90dbedc74996db8b9122eda86e45011228299bff6"))
-
+if __name__ == "__main__":
+    some_resource_client = SomeResourceClient("https://www.avito.ru")
+    print(some_resource_client.user_get_status("7e59e245162b490c6ea0edf90dbedc74996db8b9122eda86e45011228299bff6"))
+    print(some_resource_client.get_user_last_action_time("7e59e245162b490c6ea0edf90dbedc74996db8b9122eda86e45011228299bff6"))
